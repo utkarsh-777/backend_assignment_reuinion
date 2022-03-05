@@ -1,4 +1,8 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 export default {
-    SECRET: "myTicketsSecret",
-    MONGO_URI: "mongodb://localhost:27017/tickets",
+    SECRET: process.env.SECRET,
+    MONGO_URI: process.env.MONGO_URI,
 }
